@@ -1,0 +1,66 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+N	calcul_mean.py	/^    N = len(donations)$/;"	v
+X	iterablefunction.py	/^X = f(3)$/;"	v
+argv	montecarlo_circle.py	/^    from sys import argv$/;"	i
+calculate_mean	calcul_mean.py	/^def calculate_mean(numbers):$/;"	f
+canvas	codingclub/myEtchASketch.py	/^canvas = Canvas(bg=canvas_colour, height=canvas_height, width=canvas_width, highlightthickness=0)$/;"	v
+canvas_colour	codingclub/myEtchASketch.py	/^canvas_colour = "black"$/;"	v
+canvas_height	codingclub/myEtchASketch.py	/^canvas_height = 400$/;"	v
+canvas_width	codingclub/myEtchASketch.py	/^canvas_width = 600$/;"	v
+click	codingclub/myGlossary_Start.py	/^def click():$/;"	f
+count	boolean_all_possibilities_truthtable.py	/^count=0$/;"	v
+digit	boolean_all_possibilities_truthtable.py	/^    digit=[0,0,0,0]$/;"	v
+division	montecarlo_circle.py	/^from __future__ import division$/;"	i
+donations	calcul_mean.py	/^    donations = [100, 60, 70, 900, 100, 200, 500, 500, 503, 600, 1000, 1200]$/;"	v
+entry	codingclub/myGlossary_Start.py	/^entry = Entry(window, width=20, bg="light green").grid(row=1,column=0,sticky=W)$/;"	v
+f	iterablefunction.py	/^def f(n):$/;"	f
+factohund	factorial.py	/^factohund=factorial(100)$/;"	v
+factorial	factorial.py	/^def factorial(x):$/;"	f
+googol	factorial.py	/^googol= 10**100$/;"	v
+grocery_list	pythonintro.py	/^grocery_list = ['Juice','Tomatoes','Potatoes','Bananas']$/;"	v
+is_point_in_circle	montecarlo_circle.py	/^def is_point_in_circle(point, length_of_field=1):$/;"	f
+line_length	codingclub/myEtchASketch.py	/^    line_length = 50$/;"	v
+line_length	codingclub/myEtchASketch.py	/^line_length = 5$/;"	v
+line_width	codingclub/myEtchASketch.py	/^    line_width = 40$/;"	v
+line_width	codingclub/myEtchASketch.py	/^line_width = 5$/;"	v
+matplotlib	montecarlo_circle.py	/^import matplotlib.pyplot as plt$/;"	i
+mean	calcul_mean.py	/^    mean = calculate_mean(donations)$/;"	v
+monkey_trouble	codingbatpy/warmup1/monkey_trouble.py	/^def monkey_trouble(a,b):$/;"	f
+name	pythonintro.py	/^name="Derek"$/;"	v
+name	pythonintro.py	/^name=15$/;"	v
+number_of_drops	montecarlo_circle.py	/^        number_of_drops = eval(argv[1])$/;"	v
+number_of_drops	montecarlo_circle.py	/^    number_of_drops = 100$/;"	v
+os	pythonintro.py	/^import os$/;"	i
+other_events	pythonintro.py	/^other_events = ['Wash Car','Pick Up Kids', 'Cash Check']$/;"	v
+output	codingclub/myGlossary_Start.py	/^output=Text(window, width=75, height=6, wrap=WORD, background="light green")$/;"	v
+p1_colour	codingclub/myEtchASketch.py	/^p1_colour = "green"$/;"	v
+p1_move_E	codingclub/myEtchASketch.py	/^def p1_move_E(event):$/;"	f
+p1_move_N	codingclub/myEtchASketch.py	/^def p1_move_N(event):$/;"	f
+p1_move_S	codingclub/myEtchASketch.py	/^def p1_move_S(event):$/;"	f
+p1_move_W	codingclub/myEtchASketch.py	/^def p1_move_W(event):$/;"	f
+p1_x	codingclub/myEtchASketch.py	/^p1_x = canvas_width\/2$/;"	v
+p1_y	codingclub/myEtchASketch.py	/^p1_y = canvas_height$/;"	v
+pi	montecarlo_circle.py	/^from math import pi$/;"	i
+plot_rain_drops	montecarlo_circle.py	/^def plot_rain_drops(drops_in_circle, drops_out_of_circle, length_of_field=1, format='pdf'):$/;"	f
+plt	montecarlo_circle.py	/^import matplotlib.pyplot as plt$/;"	i
+quote	pythonintro.py	/^quote =  "\\"Always remember you are unique\\""$/;"	v
+r	montecarlo_circle.py	/^    r = rain(number_of_drops, plot=True, format='png', dynamic=False)$/;"	v
+rain	montecarlo_circle.py	/^def rain(number_of_drops=1000, length_of_field=1, plot=True, format='pdf', dynamic=False):$/;"	f
+rain_drop	montecarlo_circle.py	/^def rain_drop(length_of_field=1):$/;"	f
+random	montecarlo_circle.py	/^from random import random$/;"	i
+random	pythonintro.py	/^import random$/;"	i
+sys	pythonintro.py	/^import sys$/;"	i
+to_do_list	pythonintro.py	/^to_do_list = [other_events, grocery_list]$/;"	v
+to_do_list2	pythonintro.py	/^to_do_list2 = [other_events+grocery_list]$/;"	v
+to_do_list3	pythonintro.py	/^to_do_list3 = other_events + grocery_list$/;"	v
+window	codingclub/myEtchASketch.py	/^window = Tk()$/;"	v
+window	codingclub/myGlossary_Start.py	/^window = Tk()$/;"	v
+x	codingclub/myEtchASketch.py	/^x=input("admin pswd:")$/;"	v
+x	factorial.py	/^x = factorial(5)$/;"	v
+x	whatsnew/input.py	/^x = input("type x \\n");$/;"	v
+x	whatsnew/printnewline.py	/^x="hello my name is Kim!"$/;"	v
