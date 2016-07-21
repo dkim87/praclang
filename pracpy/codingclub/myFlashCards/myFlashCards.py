@@ -1,11 +1,17 @@
 from tkinter import *
 
-# declare variable
+# Main
+
+my_window = Tk()
+my_window.title("My Flashcard Application")
+
+## declare variables
 
 quizzes=[]
 answers=[]
 
 # Get quiz 
+
 my_index=-1
 print("my_index:",my_index)
 
@@ -28,10 +34,6 @@ def click_ans():
     my_ansoutput.insert(END,definition)
     
 
-# Main
-
-my_window = Tk()
-my_window.title("My Flashcard Application")
 
 # Button: Quiz
 
@@ -40,13 +42,13 @@ Button(my_window, text="get quiz", width=5, command=click_quiz).grid(row=0, colu
 # Button: Answer
 
 Button (my_window, text="get ans", width=5, command=click_ans).grid(row=0, column=1, sticky=W)
-##### column = 0 suspicious
+### column = 0 suspicious
 
 # quiz output Textbox
 
 my_quizoutput=Text(my_window, width=75, height = 2, wrap=WORD, background="light yellow")
 my_quizoutput.grid(row=1,column=0, columnspan=2)
-###### sticky=E excluded
+### sticky=E excluded
 
 # Label
 
@@ -56,9 +58,9 @@ Label(my_window, text="Definition:").grid(row=2,column=0, sticky=W)
 
 my_ansoutput=Text(my_window, width=75, height=6, wrap=WORD, background="light yellow")
 my_ansoutput.grid(row=4,column=0,columnspan=2, sticky=W)
-##### columnspan=2 not included
+### columnspan=2 not included
 
-# myFlashcards
+# read myFlashcards
 
 import csv
 
