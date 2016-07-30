@@ -1,0 +1,35 @@
+The row rank and the column rank are always equal.
+
+print(row_rank==column_rank) // True
+
+The largest possible rank for a matrix is either the number of rows or the number of columns, whichever is smaller.
+
+full_rank = min(row_num,column_num)
+
+Whenever a rank of a matrix is of less than its largest possible value, we would say that the matrix was of less than full rank and/or that its columns were linearly dependent.
+
+iif(matrix.linear_dependent == True)
+    print(matrix.rank<matrix.full_rank) // True
+
+Two vectors in the xy-plane are linearly dependent if they don't span the plane - i.e. they lie on one common line, i.e. they are either parallel or anti-parallel, i.e. either is a multiple of the other. And the equation of that line expresses their linear dependence.
+
+class eg
+if span(vector[2] x,vector[2] y).dimension != 2 : // That is, plane
+    print( isParallel(x,y) or isAntiParallel(x,y) // True
+
+Similarly, three vectors in xyz-space are linearly dependent if they don't span the space - i.e. if they lie on one common plane. And the equation of that plane expresses their linear dependence.
+
+class eg
+if span(vector[3] x,vector[3] y).dimension != 3 : // That is, space
+    print( isParallel(x,y) or isAntiParallel(x,y) // True
+
+
+
+    
+
+
+    
+
+
+
+
