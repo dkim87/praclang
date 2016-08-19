@@ -18,10 +18,49 @@ $ tmux ls
 # restart session (attach)
 $ tmux attach -t <session-number or session-name>
 
+# next session
+prefix )
+
+# previous session
+prefix (
 
 # About Window
 # create new window
 <ctrl>+b, c
 
-#create
+# next window 
+prefix n
+
+# previous window
+prefix p
+
+# last window
+prefix l
+
+# choose window
+prefix w
+
+1# About Pane
+
+# last pane
+prefix ;
+
+# horizontal split
+prefix %
+
+# vertical split 
+prefit "
+
+# break pane (make a new one?)  
+prefix !
+
+# rotate window (pane) 
+prefix C-o
+
+# select next pane 
+prefix o 
+
+# automated layout
+prefix space
+
 
