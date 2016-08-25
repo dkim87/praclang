@@ -9,6 +9,9 @@ ctrl + b, $
 # session termination
 exit
 
+# kill session
+tmux kill-session [-a] [-t session_name]
+
 # session halt (detached)
 ctrl + b, d
 
