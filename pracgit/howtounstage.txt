@@ -1,0 +1,73 @@
+
+
+Quiz
+---------------
+깃에서
+어떤 파일을 add 명령어를 이용하여 stage 했는데 
+다시 되돌리고 unstage 하고 싶다면 무슨 명령어를 쓸까요?
+
+
+
+자, 잠시 생각해 봅시다 :)
+
+
+
+답이 생각나셨으면 다음 파트로!
+
+
+
+
+
+
+
+Answer
+----------------
+우선,
+만약 첫 init 이라서 commit을 한번도 한 적이 없고, 따라서 HEAD가 존재하지 않는다면
+$git rm --cached <file> 
+명령어 말고는 안 됩니다.
+
+근데 만약 이미 아무 파일이나 commit을 해본 적이 있다면,
+$git rm --cached <file>
+$git reset HEAD <file>
+둘 다 가능합니다.
+
+그렇다면 둘의 차이점은 무엇일까요?
+전자는 파일을 아예 Untracted files로 만들어버려서
+
+Untracked files:
+ <file>
+
+이렇게 뜨고,
+후자는 단순히 파일의 변경사항이 unstaged 되어서 
+
+Changes not staged for commit:
+ modified: <file>
+
+이렇게 modified 상태로 남습니다.
+
+전자는 이제 git 이 전혀 신경을 안 쓰다는 점에서 위험하고 오류의 가능성이 있을 것 같습니다.
+반면에 후자는 
+$git checkout — <file> 
+커맨드로 마지막 commit 했을 때의 상태로 되돌릴 수 있다는 장점이 있습니다.
+아예 새 파일을 다시 불러오기 한다고 보시면 될 듯. 
+(*단 git checkout — <file> 은 working transparentory 에 직접 관여하여 <file> 을 수정하고 add 명령어로 아직 staged 된 수정내용을 날려먹으니까 주의할 것. )
+
+참고로 git reset 을 누르면 모든 stage 가 unstage 됩니다.
+참고로 
+
+
+유용하셨나요? 
+퀴즈는 맞추셨나요?
+
+
+하나만 알았으면 반만 맞추신 거에용 ;)
+
+궁금하거나 이해 안 가면 댓글 ㄱ
+//con_substance con_banner
+
+//con_banner
+//re_gall_box_1 160630 디시위치태그
+
+//160630 디시위치태그 re_gall_box_2
+130429 본문 광고 130429 btn_recommend
