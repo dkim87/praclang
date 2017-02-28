@@ -1,0 +1,6 @@
+#!/bin/sh
+
+for file in *.pdf
+do
+    pdftotext "$file"
+done
