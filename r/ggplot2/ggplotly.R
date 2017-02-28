@@ -1,0 +1,5 @@
+print(mtcars$mpg)
+print(mtcars$wt)
+a = qplot(mpg,wt,data=mtcars, color=cyl)
+print(a)
+ggplotly(a)

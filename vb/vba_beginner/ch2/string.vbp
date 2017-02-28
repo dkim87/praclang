@@ -1,0 +1,9 @@
+Sub AboutProperty()
+
+    Dim strTemp as String
+    strTemp = "Hello " & Application.UserName & "!!" & vbCr
+    strTemp = strTemp & "The current version of Excel is " & Application.Version & "."
+
+    MsgBox strTemp,, "www.iExceller.com"
+
+End Sub
