@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-#define MAX_WORDS 20
+#define MAX_WORDS 2048
 #define MAX_CHAR 255
 
 void SWAP(char str1[], char str2[]);
@@ -102,29 +102,35 @@ int main(){
             }
         }
         if(contd == 1){
-            continue;
+            continue; // if str_from_file already exists in the mywords array, then just increase the frequency by one. Continue to the next loop.
         }
 
+        // if str_from_file does not exist in the mywords array, then create a new one.
         printf("index: %d\n",index);
         printf("%s\n", str_from_file);
         strcpy(mywords[index].str,str_from_file);
-        mywords[index].freq++;
+        mywords[index].freq++; // this is equivalent to just saying `mywords[index].freq = 1`, as this variable will be initialized to zero.
         index++;
     }
 
+    // Do quick sort from the lowest index to the highest index. Don't get confused; MAX_WORDS-1 is the highest index, whilst MAX_WORDS is the size of the array.
     quickSort(mywords,0,MAX_WORDS-1);
 
-    // print words
+    // print words // disabled as MAX_WORDS too large. You can play around with this function by changing the value of MAX_WORDS from 2048 to something smaller, such as 20.
+    /*
     printf(">>>>> print words\n");
     for(int i=0;i<MAX_WORDS;i++){
         printf("%s\n",mywords[i].str);
     }
+    */
 
-    // print frequencies
+    // print frequencies // disabled as MAX_WORDS too large. You can play around with this function by changing the value of MAX_WORDS from 2048 to something smaller, such as 20.
+    /*
     printf(">>>>> print freq\n");
     for (int i=0;i<MAX_WORDS;i++){
         printf("mywords[%d].freq = %d\n",i, mywords[i].freq);
     }
+    */
 
     // print 5 most frequent words
     printf(">>>> print answers.\n");
