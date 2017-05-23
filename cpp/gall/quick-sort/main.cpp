@@ -1,7 +1,8 @@
-#include<stdio.h>
+#include<iostream>
+using namespace std;
 #include<stdlib.h>
 #include<string.h>
-#define MAX_WORDS 2048
+#define MAX_WORDS 20
 #define MAX_CHAR 255
 
 typedef struct word{
@@ -19,7 +20,7 @@ void remove_trailing_dot(char str[]){
         }
     }
     if (removed == 1){
-    printf("dot removed: %s\n",str);
+    cout << "dot removed: %s\n" << str << endl;
     }
 }
 
@@ -59,12 +60,12 @@ int main(){
     char* filename = "test.txt";
     FILE *fp = fopen(filename, "r");
     if(fp==NULL){
-        printf("can't open file\n");
-        printf("Check if the file exists.\n");
-        printf("Check your authority to read it.");
+        cout << "can't open file\n" << endl;
+        cout << "Check if the file exists.\n" << endl;
+        cout << "Check your authority to read it." << endl;
         exit(1);
     } else{
-        printf("File successfully opened.\n");
+        cout << "File successfully opened.\n" << endl;
     }
 
     //char word[MAX_CHAR]="";
@@ -105,8 +106,8 @@ int main(){
         }
 
         // if str_from_file does not exist in the mywords array, then create a new one.
-        printf("index: %d\n",index);
-        printf("%s\n", str_from_file);
+        cout << "index:" << index << endl;
+        cout << "%s\n" <<  str_from_file << endl;
         strcpy(mywords[index].str,str_from_file);
         mywords[index].freq++; // this is equivalent to just saying `mywords[index].freq = 1`, as this variable will be initialized to zero.
         index++;
@@ -117,24 +118,24 @@ int main(){
 
     // print words // disabled as MAX_WORDS too large. You can play around with this function by changing the value of MAX_WORDS from 2048 to something smaller, such as 20.
     /*
-    printf(">>>>> print words\n");
+    cout << ">>>>> print words\n" << endl;
     for(int i=0;i<MAX_WORDS;i++){
-        printf("%s\n",mywords[i].str);
+        cout << "%s\n" << mywords[i].str << endl;
     }
     */
 
     // print frequencies // disabled as MAX_WORDS too large. You can play around with this function by changing the value of MAX_WORDS from 2048 to something smaller, such as 20.
     /*
-    printf(">>>>> print freq\n");
+    cout << ">>>>> print freq\n" << endl;
     for (int i=0;i<MAX_WORDS;i++){
-        printf("mywords[%d].freq = %d\n",i, mywords[i].freq);
+        cout << "mywords[%d].freq =" << i <<  mywords[i].freq << endl;
     }
     */
 
     // print 5 most frequent words
-    printf(">>>> print answers.\n");
-    for (int i =0; i<50; i++){
-        printf("word: %s // frequency: %d\n", mywords[i].str, mywords[i].freq);
+    cout << ">>>> print answers.\n" << endl;
+    for (int i =0; i<5; i++){ // if i < '$num' is too large, seg fault
+        cout << "word: // frequency:" <<  mywords[i].str << ", freq: " << mywords[i].freq << endl;
     }
 
     return 0;

@@ -1,0 +1,16 @@
+for java:
+
+book bk1 = new book();
+
+swap(bk1, bk2); // works
+
+for cpp:
+
+book bk1, bk2;
+swap(bk1, bk2); // does not work
+
+book *bk3 = new book(); // returns a pointer to the object
+book *bk4 = new book();
+swap(bk3, bk4); // works
+
+

@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int *cp;
+
+    int hello[] = {1,2,3,4,5};
+
+    
+    return 0;
+}
