@@ -9,14 +9,17 @@ public:
 };
 
 void swap(std::unique_ptr<myclass>);
-void swap(std::shared_ptr<myclass>);
+//void swap(std::shared_ptr<myclass>);
+void swap(std::shared_ptr<myclass>&);
 void swap(myclass&);
 
 int main(){
     std::shared_ptr<myclass> objp(new myclass());
     std::cout << "variable <<objp->x>> - value: " << objp->x << " ; memory: " << &objp->x << std::endl;
     std::cout << "variable <<objp->y>> - value: " << objp->y << " ; memory: " << &objp->y << std::endl;
+    std::cout << "address: " << &objp << std::endl;
     swap(objp);
+
     std::cout << "variable <<objp->x>> - value: " << objp->x << " ; memory: " << &objp->x << std::endl;
     std::cout << "variable <<objp->y>> - value: " << objp->y << " ; memory: " << &objp->y << std::endl;
     swap(*objp);
@@ -31,7 +34,8 @@ int main(){
     return 0;
 }
 
-void swap(std::shared_ptr<myclass> obj){
+void swap(std::shared_ptr<myclass> &obj){
+    std::cout << "address: " << &obj << std::endl;
     int t = obj->x;
     obj->x = obj->y;
     obj->y = t;
