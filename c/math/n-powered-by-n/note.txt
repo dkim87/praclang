@@ -1,0 +1,1 @@
+While python is printing a quite accurate numbers, c does not.

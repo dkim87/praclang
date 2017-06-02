@@ -1,0 +1,39 @@
+;; m-x lisp-interection-mode
+;; put the cursor at the last ) and press C-j
+;; or C-x C-e to execute
+
+(switch-to-buffer-other-window "*test*")
+
+(defun hello (name) (insert "Hello " name))
+
+(progn
+  (switch-to-buffer-other-window "*test*")
+  (erase-buffer)
+  (hello "you")
+  (other-window 1))
+
+(let ((local-name "you"))
+  (switch-to-buffer-other-window "*test*")
+  (erase-buffer)
+  (hello local-name)
+  (other-window 1))
+
+(insert(format "hello %s!\n" "visitor"))
+
+(defun hello (name)
+  (insert (format "hello %s!\n" name)))
+
+(hello "you")
+
+(Defun greeting (name)
+  (let ((your-name "Bastien"))
+    (switch-to-buffer-other-window "*test*")
+    ;;(erase-buffer)
+    (insert (format "Hello %s!\n\nI am %s.."
+                    name
+                    your-name
+                    ))))
+
+(greeting "you")
+
+
