@@ -38,6 +38,7 @@ int main(){
     printbk(*myb); // ffffffff
     printbk(*(myb+1));
 
+
     //warning!! memset is not setting 4 bytes. It only sets 1 byte.
 
     return 0;

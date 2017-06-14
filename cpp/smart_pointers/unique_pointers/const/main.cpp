@@ -1,4 +1,5 @@
 #include <iostream>
+#include <memory>
 using namespace std;
 
 class myclass {
@@ -25,6 +26,14 @@ int main(){
     const std::shared_ptr<myclass> csp(new myclass()); // csp is const, not *csp
     std::shared_ptr<const myclass> scm(new myclass()); // *scm is const, not scm
     std::shared_ptr<myclass const> smc(new myclass()); // *smc is const, not smc
+
+    /* impossible for unique ptr
+    std::unique_ptr<myclass> const spc(new myclass()); // spc is const, not *spc
+    const std::unique_ptr<myclass> csp(new myclass()); // csp is const, not *csp
+    std::unique_ptr<const myclass> scm(new myclass()); // *scm is const, not scm
+    std::unique_ptr<myclass const> smc(new myclass()); // *smc is const, not smc
+    */
+
     spc->printinfo();
     csp->printinfo();
     scm->printinfo();
