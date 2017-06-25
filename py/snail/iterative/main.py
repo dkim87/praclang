@@ -1,3 +1,4 @@
+
 "Solution to Snail matrix problem."
 
 def main():
@@ -8,7 +9,31 @@ def main():
 def snail(dim):
     "solves dim sized snail matrix"
     matrix = [[0 for x in range(dim)] for y in range(dim)]
-    snail_one_layer(matrix, 0, dim, 1)
+
+    begin_num = 1
+    x = 0
+    size = len(matrix)
+    while(1):
+        if size<1:
+            break
+        for i in range(size):
+            matrix[x][x+i] = begin_num
+            begin_num+=1
+
+        for i in range(1,size):
+            matrix[x+i][x+size-1] = begin_num
+            begin_num+=1
+
+        for i in range(1,size):
+            matrix[x+size-1][x+size-1-i] = begin_num
+            begin_num+=1
+
+        for i in range(1, size-1):
+            matrix[x+size-1-i][x] = begin_num
+            begin_num += 1
+        x += 1
+        size -= 2
+
     print_mat(matrix)
 
 def print_mat(matrix):
@@ -18,26 +43,6 @@ def print_mat(matrix):
             print(matrix[i][j], end="\t")
         print("")
     print("#####")
-
-def snail_one_layer(matrix, x, size, begin_num):
-    if size<1:
-        return
-    for i in range(size):
-        matrix[x][x+i] = begin_num
-        begin_num+=1
-
-    for i in range(1,size):
-        matrix[x+i][x+size-1] = begin_num
-        begin_num+=1
-
-    for i in range(1,size):
-        matrix[x+size-1][x+size-1-i] = begin_num
-        begin_num+=1
-
-    for i in range(1, size-1):
-        matrix[x+size-1-i][x] = begin_num
-        begin_num += 1
-    return snail_one_layer(matrix, x+1, size-2, begin_num)
 
 # not used.
 #def inner_matrix(matrix):

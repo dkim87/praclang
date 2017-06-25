@@ -1,0 +1,1 @@
+This is tail recursion. Therefore quite the same as while loop.

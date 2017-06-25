@@ -1,0 +1,1 @@
+Does not matter whether using function ptr or <functional> header.
