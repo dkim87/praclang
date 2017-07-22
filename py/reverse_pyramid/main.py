@@ -116,9 +116,9 @@ def main():
     pyramids_triple(9, 10)
     beautiful_pyramids_triple(9,10)
     pyramids_multiple(9, 10)
-    #beautiful_pyramids_multiple(5,10, 11)
+    beautiful_pyramids_multiple(5,10, 11)
     #amazing_pyramids_multiple(5,20, 11)
-    beautiful_and_amazing(4, 28)
+    #beautiful_and_amazing(2, 5)
 main()
 
 

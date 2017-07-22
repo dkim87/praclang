@@ -15,9 +15,11 @@ void swap(int *a, int *b){
     *a = *a ^ *b;
 }
 
+/*
 void swap(book *a, book *b){
     *a = *a ^ *b;
 }
+*/ //binary operation can only be done on int.
 
 int main(){
 
