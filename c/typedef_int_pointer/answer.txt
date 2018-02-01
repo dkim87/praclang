@@ -1,0 +1,4 @@
+Turns out 
+typedef is compiler token, not preprocessor token.
+
+So, int_pointer a,b,c <- these are all pointers.
