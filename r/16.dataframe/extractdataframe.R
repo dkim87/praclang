@@ -7,5 +7,6 @@ emp.data <- data.frame(
                        stringsAsFactors=FALSE
                        )
 # Extract Specific columns.
-result <- data.frame(emp.data$emp_name,emp.data$salary) 
+result <- data.frame(emp.data$emp_name,emp.data$salary)
 print(result)
+

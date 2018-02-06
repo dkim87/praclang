@@ -8,6 +8,7 @@ int main(){
     int *ip = const_cast<int*>(&i);
     int &ir = const_cast<int&>(i);
 
+
     cout << setw(20) << left << "<< &i >> " << setw(20) << " has value: " << &i << endl;
     cout << setw(20) << left << "<< i >> " << setw(20) << " has value: " << i << endl;
     cout << setw(20) << left << "<< ip >> " << setw(20) << " has value: " << ip << endl;

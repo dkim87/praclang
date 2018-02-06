@@ -7,6 +7,5 @@ emp.data <- data.frame(
                                  stringsAsFactors=FALSE
                                               )
 # Add the "dept" coulmn.
-emp.data$dept <- c("IT","Operations","IT","HR","Finance") 
+emp.data$dept <- c("IT","Operations","IT","HR","Finance")
 v <- emp.data
-print(v)
