@@ -1,0 +1,18 @@
+this is m function.
+this is python3.
+hello world!
+mc pizza
+kkanta
+hot pot
+subway
+kor-chi
+home
+pizza bro
+-----
+home
+mc pizza
+pizza bro
+hot pot
+kor-chi
+kkanta
+subway

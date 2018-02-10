@@ -1,0 +1,2 @@
+this is for test2 printf
+this is for test2 cout

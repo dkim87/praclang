@@ -1,0 +1,5 @@
+if with argument
+print regional_~  just for once
+
+if without argument
+    get input
