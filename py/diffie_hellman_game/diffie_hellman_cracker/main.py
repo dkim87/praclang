@@ -6,6 +6,12 @@ def main():
 
 class Test:
     @staticmethod
+    def test_primRoots():
+        obj = primRoots(37)
+        print(obj) # turns out obj is a list.
+
+
+    @staticmethod
     def create_AB(g, p, a, b):
         A = g**a % p
         B = g**b % p

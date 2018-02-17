@@ -13,3 +13,10 @@ sshfs -o idmap=usr dkim87@linux.cs.mcgill.ca: .
 umount ~/sshfs_practice/mymnt
 * unmount will fail if you try unmount inside the mounted directory.
 
+# force unmount
+```
+pgrep -lf sshfs
+kill -9 <pid>
+umount -f <dir>
+sudo umount -f <dir> # if not work
+```

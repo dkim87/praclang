@@ -24,3 +24,6 @@ print(x)
 x = sum_3(5)
 print(x)
 
+from functools import partial
+sum1_2 = partial(sum, 1, 2)
+print(sum1_2())

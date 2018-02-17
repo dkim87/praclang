@@ -1,6 +1,7 @@
 """for dinner"""
 import random
 dinner_tuple = (
+    "port chick"
     "home",
     "mc pizza",
     "pizza bro",
@@ -15,9 +16,13 @@ dinner_list = list(dinner_tuple)
 def main():
     '''main function'''
     printarr(get_dinner())
-    print("-----")
-    printarr(dinner_list)
-    # get_frequency() # to test uniformity of the distribution
+    #test()
+
+def test():
+    #test_frequency(100000) # to test uniformity of the distribution
+    mat = test_multidimensional_list()
+    test_printarr_printmatrix(mat)
+    test_linear_indexing(mat)
 
 def get_dinner():
     '''get dinner'''
@@ -54,30 +59,66 @@ def sampling_w_replacement(mylist):
     # printarr(mylist)
     return mylist
 
-def printarr(arblist):
+def printarr(arblist): # surprised that this works for matrix as well
+    print("--------------------")
     for i in arblist:
-        print(i, sep = "%")
+        # print(i, sep = "%")
+        print(i)
+    print("--------------------")
 
 def printmatrix(arbmat):
-    h = len(arbmat)
+    h = len(arbmat) # for 10 * 5 matrix, for example, this must be 10
+    w = len(arbmat[0]) # this must be 5
+
     i, j = 0, 0;
-    while j < h:
-        print(arbmat[j][i], end="-")
-        i+=1
-        if i==h:
-            i = 0
-            j += 1
+    print("--------------------")
+    while i < h:
+        print(arbmat[i][j], end="-")
+        j+=1
+        if j==w:
+            j = 0
+            i += 1
             print("")
+    print("--------------------")
+
+def print_matrix2(arbarr):
+    print("--------------------")
+    w = len(arbarr[0])
+    h = len(arbarr)
+    for i in range(h):
+        for j in range(w):
+            print(arbarr[i][j], end="-")
+        print("")
+    print("--------------------")
 
 
-def test_frequency():
-    trial = 1000
+def test_printarr_printmatrix(arr): # what are the difference
+    #print(arr)
+    print([1, 2, 3])
+    printarr(arr)
+    #printmatrix(arr)
+    #print_matrix2(arr)
+
+def test_multidimensional_list():
+    freq = [[ (x,y) for y in range(5)  ] for x in range (10)]
+    printarr(freq)
+    return freq
+
+def test_linear_indexing(arbmat): #
+    h = len(arbmat)
+    w = len(arbmat[0])
+
+    for i in range(h):
+        print("i =", i, ", arbmat =", arbmat[i])
+
+
+def test_frequency(trial=1000):
     # trial = 100
     numlist = [0, 1, 2, 3, 4, 5, 6, 7]
     l = len(numlist)
 
     w, h = l, l
-    freq = [[0 for y in range(h)] for x in range (w)]
+    freq = [[0 for y in range(w)] for x in range (h)]
 
     while trial > 0:
         listcopy = list(numlist) # create new list instead of same ref
