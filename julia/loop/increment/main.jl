@@ -1,0 +1,7 @@
+
+i = 1
+while true
+    println(i)
+    i+=1
+end
+

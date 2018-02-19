@@ -1,6 +1,9 @@
 Makefile
 a.out
 *.o
+
+*.class
+
 tags
 TAGS
 .ycm_extra_conf.py
