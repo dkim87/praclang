@@ -11,17 +11,9 @@ class Solution:
         end_index = 0
         substr = []
         ltr_dic = {}
-
-        """
-        for i,l in enumerate(s):
-            if l not in ltr_dic:
-                ltr_dic[l] = i
-            elif l in ltr_dic:
-                print(l, "already exist in", ltr_dic[l])
-        """
-
         i = 0
         l = 0
+
         while(i < len(s)):
             l = s[i]
             if l not in ltr_dic:
