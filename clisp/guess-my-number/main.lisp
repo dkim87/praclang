@@ -1,8 +1,15 @@
-(defun pudding-eater (person)
-  (case person
-    ((henry) (setf *arch-enemy* 'stupid-lisp-alien)
-     '(curse you lisp alien - you ate my pudding))
-    (otherwise '(why you eat my pudding stranger?)
-               (print 'hello))))
+(defparameter *small* 1)
+(defparameter *big* 100)
 
-(pudding-eater 'hello)
+(defun guess-my-number ()
+  (ash (+ *small* *big*) -1)) ;; arithematic shift
+
+(defun smaller ()
+  (setf *big* (1- (guess-my-number)))
+  (guess-my-number))
+
+(defun bigger ()
+  (setf *small* (1+ (guess-my-number)))
+  (guess-my-number))
+
+

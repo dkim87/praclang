@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<assert.h>
+#include "print_bitn.h"
 
 int main(){
     double a, b, c;
@@ -10,6 +11,9 @@ int main(){
     printf("%.20g\n", a); // same
     printf("%.20g\n", b); // same
     printf("%.20g\n", c); // same
+
+    // print_bitn.h
+    //print_bitn(&a, sizeof a);
 
     double d;
     d = 1.0/16;
@@ -27,6 +31,9 @@ int main(){
     }
     printf("%.20g\n", d);
 
+
+    const char *hey = "hello world";
+    print_bitn(hey, 12 * sizeof *hey);
 
     return 0;
 }

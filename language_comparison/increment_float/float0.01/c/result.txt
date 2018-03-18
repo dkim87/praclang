@@ -1,0 +1,24 @@
+diff changed!	trial is 102, a is -1.99
+old_diff : 0.009999999999999787	 new_diff :  0.01000000000000001	diff_of_diff : 2.220446049250313e-16
+diff changed!	trial is 289, a is -0.12
+old_diff :  0.01000000000000001	 new_diff : 0.009999999999999995	diff_of_diff : -1.387778780781446e-17
+diff changed!	trial is 295, a is -0.06
+old_diff : 0.009999999999999995	 new_diff :                 0.01	diff_of_diff : 6.938893903907228e-18
+diff changed!	trial is 300, a is -0.01
+old_diff :                 0.01	 new_diff :                 0.01	diff_of_diff : -1.734723475976807e-18
+diff changed!	trial is 304, a is 0.03
+old_diff :                 0.01	 new_diff :                 0.01	diff_of_diff : 1.734723475976807e-18
+diff changed!	trial is 308, a is 0.07
+old_diff :                 0.01	 new_diff : 0.009999999999999995	diff_of_diff : -6.938893903907228e-18
+diff changed!	trial is 315, a is 0.14
+old_diff : 0.009999999999999995	 new_diff :  0.01000000000000001	diff_of_diff : 1.387778780781446e-17
+diff changed!	trial is 352, a is 0.51
+old_diff :  0.01000000000000001	 new_diff : 0.009999999999999953	diff_of_diff : -5.551115123125783e-17
+diff changed!	trial is 353, a is 0.52
+old_diff : 0.009999999999999953	 new_diff :  0.01000000000000001	diff_of_diff : 5.551115123125783e-17
+diff changed!	trial is 402, a is 1.01
+old_diff :  0.01000000000000001	 new_diff : 0.009999999999999898	diff_of_diff : -1.110223024625157e-16
+diff changed!	trial is 403, a is 1.02
+old_diff : 0.009999999999999898	 new_diff :  0.01000000000000001	diff_of_diff : 1.110223024625157e-16
+diff changed!	trial is 502, a is 2.01
+old_diff :  0.01000000000000001	 new_diff : 0.009999999999999787	diff_of_diff : -2.220446049250313e-16

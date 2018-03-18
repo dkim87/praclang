@@ -18,7 +18,7 @@ def main():
     print(r_1 / r_2)
 
     r_3 = r_1 / r_2
-    type(r_3)
+    print(type(r_3))
 
 # Symbols
     x, y = sym.symbols('x y')

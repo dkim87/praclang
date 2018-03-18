@@ -3,7 +3,7 @@ class Solution:
         debug = 1
         """
         :type s: str
-        :rtype: int
+        :rtypeolu int
         """
 
         max_len=0 # int
@@ -14,6 +14,9 @@ class Solution:
         i = 0
         l = 0
 
+        #import pdb; pdb.set_trace()
+        #import pudb; pudb.set_trace()
+        import ipdb; ipdb.set_trace()
         while(i < len(s)):
             l = s[i]
             if l not in ltr_dic:

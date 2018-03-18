@@ -246,6 +246,7 @@
 				9BED76A32039ACC100D57400 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

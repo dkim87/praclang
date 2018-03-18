@@ -2,6 +2,18 @@ Makefile
 a.out
 *.o
 
+
+__pycache__
+.mypy_cache
+venv
+
+Fsharp
+
+cs
+
+.idea
+.vscode
+
 *.class
 
 .DS_Store

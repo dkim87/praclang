@@ -65,7 +65,8 @@ def plot_hist(y, bins):
 
 
 def test_conv():
-    test_conv_sub0()
+    pass
+    # test_conv_sub0()
     # test_conv_sub1()
     # test_conv_sub2()
 
@@ -168,10 +169,11 @@ def test_compare_convolve():
 
 def test():
     """test function"""
+    pass
     # test_conv()
     # test_makeDscrtBins()
     # test_conv_repeat()
-    test_compare_convolve()
+    # test_compare_convolve()
 
 ### test end ###
 

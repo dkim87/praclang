@@ -4,7 +4,7 @@ dinner_tuple = (
     "port chick"
     "home",
     "mc pizza",
-    "pizza bro",
+    #"pizza bro",
     "hot pot",
     "kor-chi",
     "kkanta",

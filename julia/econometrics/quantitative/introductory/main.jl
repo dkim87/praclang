@@ -1,0 +1,7 @@
+# Pkg.add("Plots")
+using Plots
+ts_length = 100
+
+epsilon_values = randn(ts_length)
+plot(epsilon_values, color="blue")
+typeof(epsilon_values)
