@@ -33,6 +33,14 @@ def main():
 
     outer(5)(5) # curry? lol no
 
+    all_supplied = ft.partial(printp, 4, 4, 5, 3, 2)
+    all_supplied()
+
+    # maybe curry
+    print("maybecurry")
+    maybecurry = ft.partial(printp, 4,4,5)
+    maybecurry(4)(5)
+
 
 if __name__ == '__main__':
     main()
