@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript">
+
+			function person(name, age){
+				this.name = name;
+				this.age = age;
+				this.yearsUntilRetire = yearsLeft;
+			}
+
+function yearsLeft (){
+	var numYears = 65 - this.age;
+	return numYears;
+}
+
+var bucky = new person("Bucky Roberts", 24);
+var taylor = new person("Taylor Swift", 20);
+myobj = {name: "hello", age:30} // object initializers
+var natalie = new person("Natalie Portman", 28);
+
+
+		</script>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>object oriented programming</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+
+			document.write(bucky.name + "loves " + taylor.name + "because she is " + taylor.age);
+
+document.write(myobj.name);
+document.write(natalie.yearsUntilRetire());
+
+
+
+		</script>
+
+
+	</body>
+</html>

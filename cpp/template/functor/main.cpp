@@ -43,11 +43,27 @@ T add(T a, T b){
     return a + b;
 }
 
+double overloaded_add(double a, int b){
+    return a + b;
+}
+
 template <typename T>
 struct arg2{
     T a;
     T b;
 };
+
+template <typename R, typename F, typename A, typename B>
+R funcall_2arg(F f, A a, B b){
+    return f(a,b);
+}
+
+template <typename F, typename A, typename B>
+auto apply_withoutR(F f, A a, B b){
+    return f(a,b);
+}
+
+template <typename T> struct TD;
 
 void add1(int &v){
     std::cout << "add1" << std::endl;
@@ -74,9 +90,11 @@ void test(){
     // - second, add function was not specified. compiler has no idea if add function is add<int> (cuz no function arguments passed).
     std::cout << ans << std::endl;
 
+
     apply1<void>(add1, s); // not worked, now work.
     std::cout << "after apply1" << std::endl;
     std::cout << s.a << std::endl;
+    std::cout << s.b << std::endl;
     // same as above.
 
     apply2(add1);
@@ -85,6 +103,23 @@ void test(){
 
     print_s(s);
     test_apply4();
+
+    cout << add(1, 2) << endl;
+    cout << add(s.a, s.b) << endl;
+
+    //cout << funcall_2arg(add<int>, 1, 2) << endl; // fail: can't deduce R
+    //cout << funcall_2arg<int>(add, 1, 2) << endl; // fail: can't deduce F
+    cout << funcall_2arg<int>(add<int>, 1, 2) << endl; // works
+
+    //cout << apply_withoutR(add, 1, 2) << endl; // fail: can't deduce F
+    cout << apply_withoutR(add<int>, 1, 2) << endl;
+    cout << apply_withoutR(add<decltype(1)>, 1, 2) << endl;
+
+    TD<decltype(add<int>)> td; // way to check type lol
+
+
+
+
 }
 
 
