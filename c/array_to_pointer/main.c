@@ -10,5 +10,7 @@ int main(){
     printf("%c\n", *a[2]);
     printf("%s\n", a[2]);
 
+    char str1[10] = "hello";
+
     return 0;
 }

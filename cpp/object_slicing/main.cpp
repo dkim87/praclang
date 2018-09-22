@@ -22,8 +22,8 @@ int main(){
     b2.bar = 4;
 
     A& b2_ref = b2;
-    //b2_ref = b1;
-    b2 = b1;
+    b2_ref = b1; // result: 1 2 1 4
+    //b2 = b1; // result: 1 2 1 2
 
     cout << b1.foo << endl;
     cout << b1.bar << endl;

@@ -1,0 +1,58 @@
+binding...
+listening...
+entering infinite while loop...
+loop_counter = 0
+accepting...
+Got client connection......
+forking...
+### this is a parent process of 25286
+### my process id: 25134
+closing a parent process...
+end of while loop.. loop counter = 0
+loop_counter = 1
+accepting...
+### this is a child process
+### my process id: 25286
+### my parents id: 25134
+### buf start
+GET / HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Save-Data: on
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+DNT: 1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: ko
+
+
+### buf end
+closing a child process...
+Got client connection......
+forking...
+### this is a parent process of 25287
+### my process id: 25134
+closing a parent process...
+end of while loop.. loop counter = 1
+loop_counter = 2
+accepting...
+### this is a child process
+### my process id: 25287
+### my parents id: 25134
+### buf start
+GET /doctest.jpg HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+DNT: 1
+Save-Data: on
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: ko
+
+
+### buf end
+closing a child process...

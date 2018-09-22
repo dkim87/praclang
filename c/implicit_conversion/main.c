@@ -18,6 +18,9 @@ int main(){
     printf("%d\n", *((int *)&a)); // making this from int[] pointer to int pointer, now it works
     printf("%d\n", *((int *)&a+1));
 
+    printf("%p == %p\n", a, &a[0]);
+    printf("%lu != %lu\n", sizeof a, sizeof &a[0]);
+
 
     return 0;
 }

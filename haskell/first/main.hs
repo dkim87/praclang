@@ -56,3 +56,21 @@ morePrimes2 = 2 : morePrimes
 
 lenPrime = length morePrimes2
 
+isListEmpty = null morePrimes2
+
+secondPrime = morePrimes2 !! 1
+
+firstPrime = head morePrimes2
+
+lastPrime = last morePrimes2
+
+-- drop the last value and take the rest
+primeInit = init morePrimes2
+
+first3Primes = take 3 morePrimes2
+
+removedPrimes = drop 3 morePrimes2
+
+is7InList = 7 
+
+
